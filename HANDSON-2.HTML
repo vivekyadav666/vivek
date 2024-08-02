@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  width: 50%;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  box-sizing: border-box;
+}
+
+input[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+.tables-container {
+  margin-top: 20px;
+  display: none; /* Hide tables by default */
+}
+
+.tables-container h2 {
+  margin-bottom: 10px;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+  <h2>FORMS</h2>
+
+  <label for="name">Name:</label>
+  <input type="text" id="name" name="name">
+
+  <label for="email">Email Address:</label>
+  <input type="email" id="email" name="email">
+
+  <label for="password">Password:</label>
+  <input type="password" id="password" name="password">
+
+  <label for="language">Language:</label>
+  <select id="language" name="language">
+    <option value="react">React</option>
+    <option value="angular">Angular</option>
+    <option value="vue">Vue</option>
+  </select>
+
+  <label for="course">Course:</label>
+  <select id="course" name="course">
+    <option value="mern">MERN</option>
+    <option value="mean">MEAN</option>
+    <option value="mevn">MEVN</option>
+  </select>
+
+  <label for="field">Field:</label>
+  <select id="field" name="field">
+    <option value="front-end">Front End</option>
+    <option value="back-end">Back End</option>
+    <option value="full-stack">Full Stack</option>
+  </select>
+
+  <label for="phone">Phone Number:</label>
+  <input type="text" id="phone" name="phone">
+
+  <input type="submit" value="Submit">
+</div>
+
+<div class="tables-container">
+  <h2>TABLES</h2>
+
+  <table>
+    <tr>
+      <th>First Name</th>
+      <th>Last Name</th>
+      <th>Age Name</th>
+      <th>Phone number</th>
+      <th>Pincode</th>
+    </tr>
+    <tr>
+      <td>User First 1</td>
+      <td>User Last 1</td>
+      <td>24</td>
+      <td>1234567890</td>
+      <td>56789</td>
+    </tr>
+    <tr>
+      <td>User First 2</td>
+      <td>User Last 2</td>
+      <td>24</td>
+      <td></td>
+      <td>56789</td>
+    </tr>
+    <tr>
+      <td>User First 3</td>
+      <td>User Last 3</td>
+      <td>24</td>
+      <td>1234567890</td>
+      <td></td>
+    </tr>
+  </table>
+
+  <br>
+
+  <table>
+    <tr>
+      <th>Course:</th>
+      <th></th>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Elevation Academy</td>
+    </tr>
+    <tr>
+      <td>Contact Number:</td>
+      <td>1234567890</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>1234567890</td>
+    </tr>
+  </table>
+
+  <br>
+
+  <table>
+    <tr>
+      <th>Course</th>
+      <th>Contact Number</th>
+      <th>Date of Commencement</th>
+    </tr>
+    <tr>
+      <td>Evaluation Academy</td>
+      <td>1234567890</td>
+      <td>2 August 2020</td>
+    </tr>
+    <tr>
+      <td>Evaluation Academy</td>
+      <td>1234567890</td>
+      <td>2 August 2020</td>
+    </tr>
+    <tr>
+      <td>Evaluation Academy</td>
+      <td>1234567890</td>
+      <td>2 August 2020</td>
+    </tr>
+  </table>
+
+  <br>
+
+  <table>
+    <tr>
+      <th>Name</th>
+      <th>Rahul</th>
+      <th>Vikram</th>
+      <th>Sahu</th>
+    </tr>
+    <tr>
+      <th>Age</th>
+      <td>30</td>
+      <td>20</td>
+      <td>35</td>
+    </tr>
+  </table>
+
+  <br>
+
+  
+  <a href="# centre">Go Back</a>
+
+</div>
+
+<script>
+  const submitButton = document.querySelector('input[type="submit"]');
+  const tablesContainer = document.querySelector('.tables-container');
+
+  submitButton.addEventListener('click', () => {
+    tablesContainer.style.display = 'block';
+  });
+</script>
+
+</body>
+</html>
